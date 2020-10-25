@@ -441,7 +441,7 @@ __Derived Test Values__
 -----------------------------------------------------------------------------------------------------
 
 ## Method 10:&nbsp; TestLineGraphPanel()  
-__Goal:__ To observe the output from the construtor whether it is correct or not <br/>
+__Goal:__ To observe the output from the constructor whether it is correct or not <br/>
 __Testable Function:__ LineGraphPanel(GraphBuffer buffer, String name, int ymin, int ymax, int yminor, int xminor, Color color)<br/>
 __Parameters (Not directly):__ object GraphBuffer, String name,  int ymin, int ymax, int yminor, int xminor, Color color  <br/>
 __Return Type:__ -<br/>
