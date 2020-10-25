@@ -46,7 +46,7 @@
   - Boolean
 - __Return Value:__
   - True, False  
-- __ECC Interface-based__  
+- __Interface-based__  
 
 |  | b1 | b2 | b3 | b4 |
 |-|:-:|:-:|:-:|:-:|
@@ -54,6 +54,7 @@
 | C2: column value | Negative(B1) | Zero(B2) | Positive(B3) | null(B4) |
 | C3: data value | Negative(C1) | Zero(C2) | Positive(C3) | null(C4) |  
 
+__ECC__<br/>
 T1: (A1,B1,C1)  
 T2: (A2,B2,C2)  
 T3: (A3,B3,C3)  
@@ -61,7 +62,7 @@ T4: (A4,B4,C4)
 - __Valid values:__  
 (A2,B2,C2), (A3,B3,C3)  
 
-- __ECC Functionality-based__  
+- __Functionality-based__  
 
 |  | b1 | b2 |
 |-|:-:|:-:|
@@ -69,6 +70,7 @@ T4: (A4,B4,C4)
 | C2: column value is in range | Yes(B1) | No(B2) |
 | C3: data is set correctly | Yes(C1) | No(C2) |  
 
+__ECC__<br/>
 T1: (A1,B1,C1) 
 T2: (A2,B2,C2) 
 
@@ -104,7 +106,7 @@ T2: (A2,B2,C2)
 - __Valid values:__  
 c1b1, c1b2, c1b3  
 
-- __Functionality-based: PWC__  
+- __Functionality-based:__  
 
 |  | b1 | b2 |
 |-|:-:|:-:|
@@ -112,6 +114,7 @@ c1b1, c1b2, c1b3
 | T2: Return false if new data contains int.MIN_VALUE | True | False |
 | T3: Shift if array is full | True | False |  
 
+__PWC__<br/>
 [T1b1, T2b1], [T1b1, T2b2], [T1b2, T2b1], [T1b2, T2b2],  
 [T2b1, T3b1], [T2b1, T3b2], [T2b2, T3b1], [T2b2, T3b2]
 
@@ -189,14 +192,14 @@ __Valid values:__
   - Boolean
 - __Return Value:__
   - True    
-- __Interface-based BCC:__  
-Base = (A2,B3)  
-
+- __Interface-based:__  
 |  | b1 | b2 | b3 | b4 |
 |-|:-:|:-:|:-:|:-:|
 | C1: rowvalue | Null(A1) | Positive(A2) | Zero(A3) | Negative(A4) |
 | C2: data array value | Empty(B1) | Contain some null values(B2) | All values are valid (B3) |  |  
 
+__BCC__<br/>
+Base Choice = (A2,B3) 
 T1: (A2,B3)  
 T2: (A1,B3)   
 T3: (A4,B3)   
@@ -204,21 +207,20 @@ T4: (A2,B1)
 T5: (A2,B2)   
 T6: (A3,B3)  
 
-__Valid values__  
-- __Interface-based:__  
-(A2,B3),(A3,B3), (A1,B3)  
-- __Functionality-based:__  
-(A1), (A2)  
-- __BCC Functional base:__  
-Base choice = (A1)  
+__Valid values__   
+(A2,B3),(A3,B3), (A1,B3) 
 
+__Functionality-based:__
 |  | b1 | b2 |
 |-|:-:|:-:|
 | C1: Data is changed completely | Yes(A1) | No(A2) |  
 
-T1: (A1)  
-T2: (A2)  
-- __Derived test values__  
+__BCC__<br/>
+Base choice = (A1)  <br/>
+__Valid values__<br/>
+T1: (A1)  <br/>
+T2: (A2)  <br/>
+__Derived test values__  
 
 |  | Value | Expected |
 |-|:-:|:-:|
