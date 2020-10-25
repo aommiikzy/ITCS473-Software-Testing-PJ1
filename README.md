@@ -396,12 +396,12 @@ __Interface-based:__
 | C6: Color value is valid | True | False | - | - |  
 
 __MBCC__  
-Base Choce: [T, T, T, T, c2, T], [T, T, T, T, c1, T]  
-no. of tests = 2 + (2*(2-1)) + (2*(2-1)) + (2*(2-1)) + (2*(2-1)) + (2*(4-2)) + (2*(2-1)) = 16 tests  
-  - [T, T, T, T, c2, T]  
-    - [F, T, T, T, c2, T], [T, F, T, T, c2, T], [T, T, F, T, c2, T], [T, T, T, F, c2, T], [T, T, T, T, c2, F], [T, T, T, T, c4, T], [T, T, T, T, c3, T]  
-  - [T, T, T, T, c1, T]  
-    - [F, T, T, T, c1, T], [T, F, T, T, c1, T], [T, T, F, T, c1, T], [T, T, T, F, c1, T], [T, T, T, T, c1, F]  
+Base Choce: [T, T, T, T, c2, T], [T, T, T, T, c1, T]  <br/>
+no. of tests = 2 + (2*(2-1)) + (2*(2-1)) + (2*(2-1)) + (2*(2-1)) + (2*(4-2)) + (2*(2-1)) = 16 tests  <br/>
+[T, T, T, T, c2, T]  <br/>
+&nbsp;- [F, T, T, T, c2, T], [T, F, T, T, c2, T], [T, T, F, T, c2, T], [T, T, T, F, c2, T], [T, T, T, T, c2, F], [T, T, T, T, c4, T], [T, T, T, T, c3, T]  <br/>
+[T, T, T, T, c1, T]  <br/>
+&nbsp;- [F, T, T, T, c1, T], [T, F, T, T, c1, T], [T, T, F, T, c1, T], [T, T, T, F, c1, T], [T, T, T, T, c1, F]  <br/>
 
 __Valid Values:__  <br/>
 [T, T, T, T, c2, T], [F, T, T, T, c2, T], [T, T, F, T, c2, T], [T, T, T, F, c2, T], [T, T, T, T, c2, F], [T, T, T, T, c4, T], [T, T, T, T, c3, T], [T, T, T, T, c1, T], [T, T, T, T, c1, T], [F, T, T, T, c1, T], [T, T, F, T, c1, T], [T, T, T, F, c1, T], [T, T, T, T, c1, F]  <br/>
@@ -416,10 +416,10 @@ __Functionality-based__
 __MBCC__  
 Base Choice = [T, b1], [T, b2]  <br/>
 no. of test = 2 + (2*(2-1)) + (2*(2-2)) = 4 tests  <br/>
-- [T, b1]  <br/>
-  - [F, b1]  <br/>
-- [T, b2]  <br/>
-  - [F, b2]  <br/>
+[T, b1]  <br/>
+&nbsp;- [F, b1]  <br/>
+[T, b2]  <br/>
+&nbsp;- [F, b2]  <br/>
 __Valid Values:__  <br/>
 [T, b1], [F, b2]  <br/>
 
