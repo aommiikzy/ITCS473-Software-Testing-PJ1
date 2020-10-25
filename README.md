@@ -78,9 +78,9 @@ T2: (A2,B2,C2)
 
 |  | Value | Expected |
 |-|:-:|:-:|
-| T1: Row, column, data value value are zero | setData(0, 0, 0) | true |
-| T2: Row, column, data value value are positive | setData(1, 1, 1) | true |
-| T3: Row, column value is in range and data is set correctly | setData(1, 1, 1) | true |  
+| T1: Row, column, data value value are zero | setData(0, 0, 0) | true<br>(no error and exception) |
+| T2: Row, column, data value value are positive | setData(1, 1, 1) | true<br>(no error and exception) |
+| T3: Row, column value is in range and data is set correctly | setData(1, 1, 1) | true<br>(data is assigned correctly) |  
 
 -----------------------------------------------------------------------------------------------------
 
@@ -256,12 +256,12 @@ T2: (A2,B2)
 T3: (A3,B3)  
 T4: (A4,B4)  
 
-- __ECC Functionality-based:__  
+- __ECC Functionality-base:__  
 
 |  | b1 | b2 |
 |-|:-:|:-:|
 | C1: Column value is assigned correctly | True(A1) | False(A2) |
-| C1: Rows value is assigned correctly | True(B1) | False(B2) |  
+| C2: Rows value is assigned correctly | True(B1) | False(B2) |  
 
 T1: (A1,B1)   
 T2: (A2,B2)  
@@ -282,7 +282,7 @@ T2: (A2,B2)
 | T2: Both column and row is positive | DataBuffer(5,5) | Constructor created |
 | T3: Both column and row is zero | DataBuffer(0,0) | Constructor created |
 | T4: Both column and row is negative | DataBuffer(-1,-1) | NegativeArraySize Exception |
-| T5: Column value is assigned correctly and rows value is assigned correctly | DataBuffer(5,5) | getColumns = 5 <br>getRows = 5 |  
+| T5: Column value is assigned correctly and rows value is assigned correctly | DataBuffer(5,5) | Constructor created <br>(getColumns = 5 getRows = 5)|  
 
 -----------------------------------------------------------------------------------------------------
 
