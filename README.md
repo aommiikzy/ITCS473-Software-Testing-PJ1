@@ -279,8 +279,8 @@ T2: (A2,B2)
  |  | Value | Expected |
 |-|:-:|:-:|
 | T1: Both column and row is null | DataBuffer(null, null) | NullPointer Exception |
-| T2: Both column and row is positive | DataBuffer(5,5) | Not error |
-| T3: Both column and row is zero | DataBuffer(0,0) | Not error |
+| T2: Both column and row is positive | DataBuffer(5,5) | Constructor created |
+| T3: Both column and row is zero | DataBuffer(0,0) | Constructor created |
 | T4: Both column and row is negative | DataBuffer(-1,-1) | NegativeArraySize Exception |
 | T5: Column value is assigned correctly and rows value is assigned correctly | DataBuffer(5,5) | getColumns = 5 <br>getRows = 5 |  
 
