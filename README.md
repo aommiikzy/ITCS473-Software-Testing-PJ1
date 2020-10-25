@@ -2,15 +2,11 @@
 
 
 ## Method 1: &nbsp; testInsertData()
-- __Goal:__ To test whether the data is inserted into the array
-- __Testable Function:__
-  - insertData()
-- __Parameters:__
-  - int value
-- __Return type:__
-  - int Array
-- __Return Value:__
-  - int Array with inserted value  
+__Goal:__ To test whether the data is inserted into the array<br/>
+__Testable Function:__ insertData()<br/>
+__Parameters:__ int value<br/>
+__Return type:__ int Array<br/>
+__Return Value:__ int Array with inserted value  <br/>
   
   
 |  | b1 | b2 |
@@ -19,15 +15,15 @@
 | C2: Input format is int | True | False |
 | C3: Occurrence of value in the data array | 0 (c1) | Equal or more than 1 (c2) |
 
-- __PWC__<br/>
-[T, T], ~~[T, F]~~, ~~[F, T]~~, [F, F],   
-[T, c1], [T, c2], ~~[F, c1]~~, [F, c2],   
-[T, c1], ~~[T, c2]~~, [F, c1], [F, c2]
+__PWC__<br/>
+[T, T], ~~[T, F]~~, ~~[F, T]~~, [F, F],  <br/> 
+[T, c1], [T, c2], ~~[F, c1]~~, [F, c2],  <br/> 
+[T, c1], ~~[T, c2]~~, [F, c1], [F, c2]<br/>
 
-- __Valid values:__<br/>
+__Valid values:__<br/>
 [T, F, c1], [F, T, c2]  
 
-- __Derived test values__
+__Derived test values__
 
 |  | Value | Expected |
 |-|:-:|:-:|
@@ -37,16 +33,12 @@
 -----------------------------------------------------------------------------------------------------
 
 ## Method 2:&nbsp; testSetData()
-- __Goal:__ To observe the correct data assignment in the original array
-- __Testable Function:__
-  - setData()
-- __Parameters:__
-  - int row, column, data value
-- __Return type:__
-  - Boolean
-- __Return Value:__
-  - True, False  
-- __Interface-based__  
+__Goal:__ To observe the correct data assignment in the original array<br/>
+__Testable Function:__ setData()<br/>
+__Parameters:__ int row, column, data value<br/>
+__Return type:__ Boolean<br/>
+__Return Value:__ True, False <br/>
+__Interface-based__  
 
 |  | b1 | b2 | b3 | b4 |
 |-|:-:|:-:|:-:|:-:|
@@ -58,11 +50,11 @@ __ECC__<br/>
 T1: (A1,B1,C1)  
 T2: (A2,B2,C2)  
 T3: (A3,B3,C3)  
-T4: (A4,B4,C4) 
-- __Valid values:__  
-(A2,B2,C2), (A3,B3,C3)  
+T4: (A4,B4,C4) <br/>
+__Valid values:__  <br/>
+(A2,B2,C2), (A3,B3,C3)  <br/>
 
-- __Functionality-based__  
+__Functionality-based__  
 
 |  | b1 | b2 |
 |-|:-:|:-:|
@@ -71,12 +63,12 @@ T4: (A4,B4,C4)
 | C3: data is set correctly | Yes(C1) | No(C2) |  
 
 __ECC__<br/>
-T1: (A1,B1,C1) 
-T2: (A2,B2,C2) 
+T1: (A1,B1,C1) <br/>
+T2: (A2,B2,C2) <br/>
 
-- __Valid values:__  
-(A1,B1,C1)  
-- __Derived test values__  
+__Valid values:__  <br/>
+(A1,B1,C1)  <br/>
+__Derived test values__  
 
 |  | Value | Expected |
 |-|:-:|:-:|
@@ -87,26 +79,22 @@ T2: (A2,B2,C2)
 -----------------------------------------------------------------------------------------------------
 
 ## Method 3:&nbsp; testAppendDataRow() 
-- __Goal:__ To test whether an array data is correctly appended input into the back of an existing data array, column-wise, shift to the right if the existing data array is full
-- __Testable Function:__
-  - appendDataRow()
-- __Parameters:__
-  - int array
-- __Return type:__
-  - Boolean
-- __Return Value:__
-  - True, False  
-- __Interface-based:__  
+__Goal:__ To test whether an array data is correctly appended input into the back of an existing data array, column-wise, shift to the right if the existing data array is full<br/>
+__Testable Function:__ appendDataRow()<br/>
+__Parameters:__ int array<br/>
+__Return type:__ Boolean<br/>
+__Return Value:__ True, False  <br/>
+__Interface-based:__  
 
 |  | b1 | b2 | b3 |
 |-|:-:|:-:|:-:|
 | C1: Array value | Contains null value in some position | All value in the array is int | Empty array |  
 
 
-- __Valid values:__  
-c1b1, c1b2, c1b3  
+__Valid values:__ <br/> 
+c1b1, c1b2, c1b3  <br/>
 
-- __Functionality-based:__  
+__Functionality-based:__  
 
 |  | b1 | b2 |
 |-|:-:|:-:|
@@ -120,8 +108,8 @@ __PWC__<br/>
 
 __Valid values:__  
 [T1b1, T2b1, T3b2], [T1b1, T2b2, T3b2]  
-
--__Derived test values:__  
+<br/>
+__Derived test values:__  
 
 |  | Value | Expected |
 |-|:-:|:-:|
@@ -134,43 +122,38 @@ __Valid values:__
 -----------------------------------------------------------------------------------------------------
 
 ## Method 4:&nbsp; testResetBuffer() 
-- __Goal:__ To test if the data array is reset to its initial state (default value : -2147483648)
-- __Testable Function:__
-  - ResetBuffer()
-- __Parameters (Not directly):__
-  - data [][]
-- __Return type:__
-  - -
-- __Return Value:__
-  - -  
-- __Exceptional behavior__  
-  - -
-- __Interface-based:__  
+__Goal:__ To test if the data array is reset to its initial state (default value : -2147483648)<br/>
+__Testable Function:__ resetBuffer()<br/>
+__Parameters (Not directly):__ data [][]<br/>
+__Return type:__ -<br/>
+__Return Value:__ -<br/>
+__Exceptional behavior:__ -<br/>
+__Interface-based:__  
 
 |  | b1 | b2 |
 |-|:-:|:-:|
 | C1: Array element value | All valid (a1) | Contain null value (a2) |
 | C2: Array is empty | True | False |  
 
-- __ACoC:__  
-[a1, T], [a1, F], [a2, T], [a2, T]  
+__ACoC:__  <br/>
+[a1, T], [a1, F], [a2, T], [a2, T]  <br/>
 
-- __Valid values:__  
-[a1, F], [a2, F]  
+__Valid values:__  <br/>
+[a1, F], [a2, F]  <br/>
 
-- __Functionality-based:__  
+__Functionality-based:__  
 
 |  | b1 | b2 |
 |-|:-:|:-:|
 | C1: Array element after reset | All default value (-2147483648) | Contain Invalid value |  
 
-- __ACoC:__  
-[b1], [b2]   
+__ACoC:__  <br/>
+[b1], [b2] <br/>  
 
-- __Valid values:__  
-[b1]  
+__Valid values:__  <br/>
+[b1]  <br/>
 
--__Derived test values:__  
+__Derived test values:__  
 
 |  | Array | Expected |
 |-|:-:|:-:|
@@ -183,16 +166,13 @@ __Valid values:__
 -----------------------------------------------------------------------------------------------------
 
 ## Method 5:&nbsp; testSetDataRow()
-- __Goal:__ To observe the correct data assignment in the row of the original array
-- __Testable Function:__
-  - setDataRow()  
-- __Parameters:__
-  - int column, array data
-- __Return type:__
-  - Boolean
-- __Return Value:__
-  - True    
-- __Interface-based:__  
+__Goal:__ To observe the correct data assignment in the row of the original array<br/>
+__Testable Function:__ setDataRow()  <br/>
+__Parameters:__ int column, array data<br/>
+__Return Type:__ Boolean<br/>
+__Return Value:__ True    <br/>
+__Exceptional behavior:__ -<br/>
+__Interface-based:__  
 |  | b1 | b2 | b3 | b4 |
 |-|:-:|:-:|:-:|:-:|
 | C1: rowvalue | Null(A1) | Positive(A2) | Zero(A3) | Negative(A4) |
@@ -237,46 +217,43 @@ T3: (A2,B1)
 -----------------------------------------------------------------------------------------------------
 
 ## Method 6:&nbsp; testDataBuffer()
-- __Goal:__ To observe the value of the contractor whether input columns and rows are created correctly or not
-- __Testable Function:__
-  - DataBuffer()
-- __Parameters:__
-  - int row, column
-- __Return type:__
-  - -
-- __Return Value:__
-  - -  
-- __ECC Interface-based:__  
+__Goal:__ To observe the value of the contractor whether input columns and rows are created correctly or not<br/>
+__Testable Function:__ DataBuffer()<br/>
+__Parameters:__ int row, column<br/>
+__Return Type:__ -<br/>
+__Return Value:__ -  <br/>
+__Exceptional Behavior:__ -<br/>
+__Interface-based:__  
 
 |  | b1 | b2 | b3 | b4 |
 |-|:-:|:-:|:-:|:-:|
 | C1: Column value | Null(A1) | Positive(A2) | Zero(A3) | Negative(A4) |
 | C2: Rows value | Null(B1) | Positive(B2) | Zero(B3) | Negative(B4) |  
 
-T1: (A1,B1)  
-T2: (A2,B2)  
-T3: (A3,B3)  
-T4: (A4,B4)  
+__ECC__ <br/>
+T1: (A1,B1)  <br/>
+T2: (A2,B2)  <br/>
+T3: (A3,B3)  <br/>
+T4: (A4,B4)  <br/>
 
-- __ECC Functionality-base:__  
+__Valid Values:__<br/>
+(A1,B1), (A2,B2), (A3,B3) ,(A4,B4) <br/>
 
+__Functionality-based:__  
+ 
 |  | b1 | b2 |
 |-|:-:|:-:|
 | C1: Column value is assigned correctly | True(A1) | False(A2) |
 | C2: Rows value is assigned correctly | True(B1) | False(B2) |  
 
-T1: (A1,B1)   
-T2: (A2,B2)  
+__ECC__ <br/>
+T1: (A1,B1) <br/>  
+T2: (A2,B2)  <br/>
 
-- __Valid values:__  
-
-- __Interface-based:__  
-(A1,B1), (A2,B2), (A3,B3) ,(A4,B4)  
-
--__Functionality-based:__  
- (A1,B1)  
+__Valid values:__  <br/>
+(A1,B1)  <br/>
  
- - __Derived test values__  
+ __Derived test values__  
  
  |  | Value | Expected |
 |-|:-:|:-:|
@@ -289,46 +266,45 @@ T2: (A2,B2)
 -----------------------------------------------------------------------------------------------------
 
 ## Method 7:&nbsp; testGetColumnClone()
-- __Goal:__ To observe the value of column after it was cloned whether it is identical to the original array
-- __Testable Function:__
-  - getColumnClone()
-- __Parameters:__
-  - int column
-- __Return type:__
-  - array
-- __Return Value:__
-  - The value is assigned in the new array.  
-  
-- __Interface-based ACoC:__  
+__Goal:__ To observe the value of column after it was cloned whether it is identical to the original array<br/>
+__Testable Function:__ getColumnClone()<br/>
+__Parameters:__ int column<br/>
+__Return type:__ array<br/>
+__Return Value:__ The value is assigned in the new array <br/> 
+__Exceptional Behavior:__ -<br/>
+
+__Interface-based ACoC:__  
 
 |  | b1 | b2 | b3 | b4 |
 |-|:-:|:-:|:-:|:-:|
 | C1: column value | Null(A1) | Positive(A2) | Zero(A3) | Negative(A4) |  
 
-T1: (A1)   
-T2: (A2)   
-T3: (A3)   
-T4: (A4)  
+__ACoC__ <br/>
+T1: (A1)   <br/>
+T2: (A2)   <br/>
+T3: (A3)   <br/>
+T4: (A4)  <br/>
 
-- __Functional-based ACoC:__  
+__Valid Values:__ <br/>
+(A1), (A2), (A3), (A4) <br/>
+
+__Functional-based ACoC:__  
 
 |  | b1 | b2 |
 |-|:-:|:-:|
 | C1 : All new elements array are the same with the main array column. | True(A1) | False(A2) |
 | C2 : Input column is in range of main array | True(B1) | False(B2) |  
 
-T1: (A1,B1)  
-T2: (A1,B2)  
-T3: (A2,B1)  
-T4: (A2,B2)  
+__ACoC__ <br/>
+T1: (A1,B1)  <br/>
+T2: (A1,B2)  <br/>
+T3: (A2,B1)  <br/>
+T4: (A2,B2)  <br/>
 
-__Eliminate redundant tests and infeasible tests__  
-- __Interface-based:__  
-(A1), (A2), (A3), (A4)    
-- __Functional-based:__  
-(A1,B1)  
+__Valid Values:__  <br/>
+(A1,B1)  <br/>
 
-- __Derived test values__  
+__Derived test values__  
 
 |  | Value | Expected |
 |-|:-:|:-:|
@@ -341,48 +317,47 @@ __Eliminate redundant tests and infeasible tests__
 -----------------------------------------------------------------------------------------------------
 
 ## Method 8:&nbsp; testSetDataColumn()
-- __Goal:__ To observe the correct data assignment in the column of the original array  
-- __Testable Function:__
-  - setDataColumn())
-- __Parameters:__
-  - int column, array data
-- __Return type:__
-  - Boolean
-- __Return Value:__
-  - True  
-  
-- __Interface-based BCC:__  
-Base = (A2, B3)  
+__Goal:__ To observe the correct data assignment in the column of the original array  <br/>
+__Testable Function:__ setDataColumn())<br/>
+__Parameters:__ int column, array data<br/>
+__Return type:__ Boolean<br/>
+__Return Value:__ True  <br/>
+__Exceptional Behavior:__ -<br/>
 
+__Interface-based:__  
+ 
 |  | b1 | b2 | b3 | b4 |
 |-|:-:|:-:|:-:|:-:|
 | C1: column value | Null(A1) | Positive(A2) | Zero(A3) | Negative(A4) |
 | C2: data array value | Empty(B1) | Contain some null values(B2) | All values are valid (B3) |  |  
 
-T1: (A2,B3)   
-T2: (A1,B3)   
-T3: (A4,B3)   
-T4: (A2,B1)   
-T5: (A2,B2)   
-T6: (A3,B3)  
+__BCC__ <br/>
+Base Choice = (A2, B3) <br/>
+T1: (A2,B3)   <br/>
+T2: (A1,B3)   <br/>
+T3: (A4,B3)   <br/>
+T4: (A2,B1)   <br/>
+T5: (A2,B2)   <br/>
+T6: (A3,B3)  <br/>
 
-- __Functional-based BCC:__  
-Base = (A1)  
+__Valid Values:__ <br/>
+(A2,B3),(A3,B3), (A1,B3)  <br/>
 
+__Functional-based:__  
+ 
 |  | b1 | b2 |
 |-|:-:|:-:|
 | C1: Data is changed completely | Yes(A1) | No(A2) |  
 
-T1: (A1)   
-T2: (A2)  
+__BCC__ <br/>
+Base Choice = (A1) <br/>
+T1: (A1)   <br/>
+T2: (A2)  <br/>
 
-__Eliminate redundant tests and infeasible tests__  
-- __Interface-based:__  
-(A2,B3),(A3,B3), (A1,B3)    
-- __Functionality-based:__  
-(A1), (A2)   
+__Valid Values:__   <br/>
+(A1), (A2)   <br/>
 
-- __Derived test values__  
+__Derived test values__  
 
 |  | Value | Expected |
 |-|:-:|:-:|
@@ -395,18 +370,13 @@ __Eliminate redundant tests and infeasible tests__
 -----------------------------------------------------------------------------------------------------
 
 ## Method 9:&nbsp; testBarGraphPanel()  
-- __Goal:__ To test if the constructor of BarGraphPanel is functioned based on input parameters
-- __Testable Function:__
-  - BarGraphPanel()
-- __Parameters (Not directly):__
-  - object GraphBuffer, String graphName, int yMin, int yMax, int yMinor, Color.class
-- __Return type:__
-  - -
-- __Return Value:__
-  - -  
-- __Exceptional behavior__  
-  - yMin/yMax can be both negative and positive  
-- __Interface-based:__
+__Goal:__ To test if the constructor of BarGraphPanel is functioned based on input parameters<br/>
+__Testable Function:__ BarGraphPanel()<br/>
+__Parameters (Not directly):__ object GraphBuffer, String graphName, int yMin, int yMax, int yMinor, Color.class<br/>
+__Return type:__ -<br/>
+__Return Value:__ -  <br/>
+__Exceptional behavior__   yMin/yMax can be both negative and positive  <br/>
+__Interface-based:__
 
 |  | b1 | b2 | b3 | b4 |
 |-|:-:|:-:|:-:|:-:|
@@ -417,7 +387,7 @@ __Eliminate redundant tests and infeasible tests__
 | C5: yMinor int value | Zero (c1) | More than or equal to 1 (c2) | Negative (c3) | Null (c4) |
 | C6: Color value is valid | True | False | - | - |  
 
-- __MBCC__  
+__MBCC__  
 Base Choce: [T, T, T, T, c2, T], [T, T, T, T, c1, T]  
 no. of tests = 2 + (2*(2-1)) + (2*(2-1)) + (2*(2-1)) + (2*(2-1)) + (2*(4-2)) + (2*(2-1)) = 16 tests  
   - [T, T, T, T, c2, T]  
@@ -425,27 +395,27 @@ no. of tests = 2 + (2*(2-1)) + (2*(2-1)) + (2*(2-1)) + (2*(2-1)) + (2*(4-2)) + (
   - [T, T, T, T, c1, T]  
     - [F, T, T, T, c1, T], [T, F, T, T, c1, T], [T, T, F, T, c1, T], [T, T, T, F, c1, T], [T, T, T, T, c1, F]  
 
-- __Valid values:__  
-[T, T, T, T, c2, T], [F, T, T, T, c2, T], [T, T, F, T, c2, T], [T, T, T, F, c2, T], [T, T, T, T, c2, F], [T, T, T, T, c4, T], [T, T, T, T, c3, T], [T, T, T, T, c1, T], [T, T, T, T, c1, T], [F, T, T, T, c1, T], [T, T, F, T, c1, T], [T, T, T, F, c1, T], [T, T, T, T, c1, F]  
+__Valid Values:__  <br/>
+[T, T, T, T, c2, T], [F, T, T, T, c2, T], [T, T, F, T, c2, T], [T, T, T, F, c2, T], [T, T, T, T, c2, F], [T, T, T, T, c4, T], [T, T, T, T, c3, T], [T, T, T, T, c1, T], [T, T, T, T, c1, T], [F, T, T, T, c1, T], [T, T, F, T, c1, T], [T, T, T, F, c1, T], [T, T, T, T, c1, F]  <br/>
 
-- __Functionality-based__  
+__Functionality-based__  
 
 |  | b1 | b2 |
 |-|:-:|:-:|
 | C1: Constructor is created | True | False |
 | C2: Data of constructor after created | All data is valid (b1) | Contain invalid data (b2) |  
 
-- __MBCC__  
-Base Choice = [T, b1], [T, b2]  
-no. of test = 2 + (2*(2-1)) + (2*(2-2)) = 4 tests  
-- [T, b1]  
-  - [F, b1]  
-- [T, b2]  
-  - [F, b2]  
-- __Valid values:__  
-[T, b1], [F, b2]  
+__MBCC__  
+Base Choice = [T, b1], [T, b2]  <br/>
+no. of test = 2 + (2*(2-1)) + (2*(2-2)) = 4 tests  <br/>
+- [T, b1]  <br/>
+  - [F, b1]  <br/>
+- [T, b2]  <br/>
+  - [F, b2]  <br/>
+__Valid Values:__  <br/>
+[T, b1], [F, b2]  <br/>
 
-- __Derived test values__  
+__Derived test values__  
 
 |  | Graph<br>Buffer | name | ymin | ymax | yminor | color | Expected result |
 |-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -461,19 +431,13 @@ no. of test = 2 + (2*(2-1)) + (2*(2-2)) = 4 tests
 -----------------------------------------------------------------------------------------------------
 
 ## Method 10:&nbsp; TestLineGraphPanel()  
-- __Goal:__ To observe the output from the construtor whether it is correct or not
-- __Testable Function:__
-  - LineGraphPanel(GraphBuffer buffer, String name, int ymin, int ymax, int yminor, int xminor, Color color)
-- __Parameters (Not directly):__
-  - object GraphBuffer, String name,  int ymin, int ymax, int yminor, int xminor, Color color  
-- __Return type:__
-  - -
-- __Return Value:__
-  - -  
-- __Exceptional behavior__  
-  - -  
-- __Interface-based:__
-
+__Goal:__ To observe the output from the construtor whether it is correct or not <br/>
+__Testable Function:__ LineGraphPanel(GraphBuffer buffer, String name, int ymin, int ymax, int yminor, int xminor, Color color)<br/>
+__Parameters (Not directly):__ object GraphBuffer, String name,  int ymin, int ymax, int yminor, int xminor, Color color  <br/>
+__Return type:__ -<br/>
+__Return Value:__ -  <br/>
+__Exceptional behavior__ -  <br/>
+__Interface-based:__
 
 |  | b1 | b2 | b3 | b4 |
 |-|:-:|:-:|:-:|:-:|
@@ -485,21 +449,21 @@ no. of test = 2 + (2*(2-1)) + (2*(2-2)) = 4 tests
 | C6: xminor  value | Null(G1) | Positive(G2) | Zero(G3) | Negative(G4) |
 | C7: Color value | valid(D1) | invalid(D2) | - | - |  
 
-- __Functionality-based:__  
+__Functionality-based:__  
 
 |  | b1 | b2 |
 |-|:-:|:-:|
 | C1: LineGraphPanel has been created | True | False |
 | C2: correct assigned variable | every variable | some variables are incorrect |  
 
-- __MBCC__  
+__MBCC__  
   - (True, NotNull, Null,Null,Null,Null, invalid)  
     - (True, NotNull, Zero,Null,Null,Null, invalid), (True, NotNull, Null,Negative,Null,Null, invalid), (True, NotNull, Null, Zero,Null,Null, invalid), (True, NotNull, Null,Negative,Null,Null, invalid), (True, NotNull, Null,Null,Zero,Null, invalid), (True, NotNull, Null,Null,Negative,Null, invalid), (True, NotNull, Null,Null,Null, Zero, invalid), (True, NotNull, Null,Null,Null,Negative, invalid), (False, NotNull, Null,Null,Null,Null, invalid), (True, Null, Null,Null,Null,Null, invalid)  
   - (True, NotNull, Positive, Positive, Positive,Positive, Valid)  
     - (True, NotNull, Zero, Positive, Positive,Positive, Valid), (True, NotNull, Negative, Positive, Positive,Positive, Valid), (True, NotNull, Positive, Zero, Positive,Positive, Valid), (True, NotNull, Positive, Negative, Positive,Positive, Valid), (True, NotNull, Positive, Positive, Zero,Positive, Valid), (True, NotNull, Positive, Positive, Negative,Positive, Valid), (True, NotNull, Positive, Positive, Positive, Zero, Valid),
 (True, NotNull, Positive, Positive, Positive, Negative, Valid), (False, NotNull, Positive, Positive, Positive,Positive, Valid), (True, Null, Positive, Positive, Positive,Positive, Valid)  
 
-- __MBCC__  
+__MBCC__  
   - (True, every variable)  
   - (False,  every variable)  
     - there is no test case that falls into this characteristic.  
@@ -507,10 +471,10 @@ no. of test = 2 + (2*(2-1)) + (2*(2-2)) = 4 tests
     -  there is no test case that falls into this characteristic.  
   - (False, some variables are incorrect)  
   
-- __Valid values:__  
+__Valid values:__  
   - (True, NotNull, Zero,Null,Null,Null, invalid), (True, NotNull, Null,Negative,Null,Null, invalid), (True, NotNull, Null, Zero,Null,Null, invalid), (True, NotNull, Null,Negative,Null,Null, invalid), (True, NotNull, Null,Null,Zero,Null, invalid), (True, NotNull, Null,Null,Negative,Null, invalid), (True, NotNull, Null,Null,Null, Zero, invalid), (True, NotNull, Null,Null,Null,Negative, invalid), (False, NotNull, Null,Null,Null,Null, invalid), (True, Null, Null,Null,Null,Null, invalid), (True, NotNull, Positive, Positive, Positive,Positive, Valid), (True, NotNull, Zero, Positive, Positive,Positive, Valid), (True, NotNull, Negative, Positive, Positive,Positive, Valid), (True, NotNull, Positive, Zero, Positive,Positive, Valid), (True, NotNull, Positive, Negative, Positive,Positive, Valid), (True, NotNull, Positive, Positive, Zero,Positive, Valid), (True, NotNull, Positive, Positive, Negative,Positive, Valid), (True, NotNull, Positive, Positive, Positive, Zero, Valid), (True, NotNull, Positive, Positive, Positive, Negative, Valid), (True, every variable), (False, some variables are incorrect)  
   
-- __Derived test values__  
+__Derived test values__  
 
 |  | Graph<br>Buffer | name | ymin | ymax | yminor | xminor | color | Expected result |
 |-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
