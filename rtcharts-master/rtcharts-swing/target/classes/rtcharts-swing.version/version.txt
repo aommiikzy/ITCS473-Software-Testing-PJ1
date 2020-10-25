@@ -1,0 +1,7 @@
+Proj:rtcharts-swing 
+Compiled:20201025-1026 
+Computer:Windows 1010.0 
+User:nutta 
+Computer:NUTT 
+Ver:1.4.0-SNAPSHOT 
+Org:SINTEF 
