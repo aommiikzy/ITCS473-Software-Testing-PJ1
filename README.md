@@ -1,7 +1,7 @@
 # ITCS473-Software-Quality-Assurance-Testing-Project 1
 
 
-__Method 1:__ testInsertData(), testInsertNullData()
+## Method 1: &nbsp; testInsertData()
 - __Goal:__ To test whether the data is inserted into the array
 - __Testable Function:__
   - insertData()
@@ -36,7 +36,7 @@ __Method 1:__ testInsertData(), testInsertNullData()
 
 -----------------------------------------------------------------------------------------------------
 
-__Method 2:__ setData()
+## Method 2:&nbsp; testSetData()
 - __Goal:__ To set the data in the main array
 - __Testable Function:__
   - setData()
@@ -84,7 +84,7 @@ T2: (A2,B2,C2)
 
 -----------------------------------------------------------------------------------------------------
 
-__Method 3:__ TestappendDataRow() 
+## Method 3:&nbsp; TestAppendDataRow() 
 - __Goal:__ To append array input into the back of an existing data array, shift to the right if the existing data array is full.
 - __Testable Function:__
   - appendDataRow()
@@ -130,7 +130,7 @@ __Eliminate redundant tests and infeasible tests:__
 
 -----------------------------------------------------------------------------------------------------
 
-__Method 4:__ testResetBuffer() 
+## Method 4:&nbsp; testResetBuffer() 
 - __Goal:__ Reset the main array to its initial state.
 - __Testable Function:__
   - ResetBuffer()
@@ -179,7 +179,7 @@ __Method 4:__ testResetBuffer()
 
 -----------------------------------------------------------------------------------------------------
 
-__Method 5:__ TestsetDataRow()
+## Method 5:&nbsp; TestsetDataRow()
 - __Goal:__ To set data in column of the main array.
 - __Testable Function:__
   - setDataRow()  
@@ -234,7 +234,7 @@ T3: (A2,B1)
 
 -----------------------------------------------------------------------------------------------------
 
-__Method 6:__ DataBuffer()
+## Method 6:&nbsp; testDataBuffer()
 - __Goal:__ To assign value of column and rows in dataBuffer class
 - __Testable Function:__
   - DataBuffer()
@@ -286,7 +286,7 @@ T2: (A2,B2)
 
 -----------------------------------------------------------------------------------------------------
 
-__Method 7:__ getColumnClone()
+## Method 7:&nbsp; testGetColumnClone()
 - __Goal:__ To clone the value in the main array
 - __Testable Function:__
   - getColumnClone()
@@ -338,7 +338,7 @@ __Eliminate redundant tests and infeasible tests__
 
 -----------------------------------------------------------------------------------------------------
 
-__Method 8:__ setDataColumn()
+## Method 8:&nbsp; testSetDataColumn()
 - __Goal:__ To set data in column of the main array  
 - __Testable Function:__
   - setDataColumn())
@@ -392,7 +392,7 @@ __Eliminate redundant tests and infeasible tests__
 
 -----------------------------------------------------------------------------------------------------
 
-__Method 9:__ testBarGraphPanel()  
+## Method 9:&nbsp; testBarGraphPanel()  
 - __Goal:__ To plot and show a bar graph model based on the input value
 - __Testable Function:__
   - BarGraphPanel()
@@ -458,7 +458,7 @@ no. of test = 2 + (2*(2-1)) + (2*(2-2)) = 4 tests
 
 -----------------------------------------------------------------------------------------------------
 
-__Method 10:__ TestLineGraphPanel()  
+## Method 10:&nbsp; TestLineGraphPanel()  
 - __Goal:__ To plot and show a sin function model based on the input value
 - __Testable Function:__
   - LineGraphPanel(GraphBuffer buffer, String name, int ymin, int ymax, int yminor, int xminor, Color color)
