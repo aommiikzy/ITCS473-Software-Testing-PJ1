@@ -72,6 +72,7 @@ T2: (A2,B2,C2) <br/>
 
 __Valid Values:__  <br/>
 (A1,B1,C1)  <br/>
+
 __Derived Test Values__  
 
 |  | Value | Expected |
@@ -115,6 +116,7 @@ __PWC__<br/>
 __Valid Values:__  
 [T1b1, T2b1, T3b2], [T1b1, T2b2, T3b2]  
 <br/>
+
 __Derived Test Values:__  
 
 |  | Value | Expected |
