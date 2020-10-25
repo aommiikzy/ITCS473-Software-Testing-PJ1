@@ -459,7 +459,7 @@ no. of test = 2 + (2*(2-1)) + (2*(2-2)) = 4 tests
 -----------------------------------------------------------------------------------------------------
 
 ## Method 10:&nbsp; TestLineGraphPanel()  
-- __Goal:__ To plot and show a sin function model based on the input value
+- __Goal:__ To observe the output from the construtor whether it is correct or not
 - __Testable Function:__
   - LineGraphPanel(GraphBuffer buffer, String name, int ymin, int ymax, int yminor, int xminor, Color color)
 - __Parameters (Not directly):__
