@@ -84,7 +84,7 @@ T2: (A2,B2,C2)
 
 -----------------------------------------------------------------------------------------------------
 
-## Method 3:&nbsp; TestAppendDataRow() 
+## Method 3:&nbsp; testAppendDataRow() 
 - __Goal:__ To append array input into the back of an existing data array, shift to the right if the existing data array is full.
 - __Testable Function:__
   - appendDataRow()
@@ -179,7 +179,7 @@ __Eliminate redundant tests and infeasible tests:__
 
 -----------------------------------------------------------------------------------------------------
 
-## Method 5:&nbsp; TestsetDataRow()
+## Method 5:&nbsp; testSetDataRow()
 - __Goal:__ To set data in column of the main array.
 - __Testable Function:__
   - setDataRow()  
