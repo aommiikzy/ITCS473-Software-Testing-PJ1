@@ -393,7 +393,7 @@ __Eliminate redundant tests and infeasible tests__
 -----------------------------------------------------------------------------------------------------
 
 ## Method 9:&nbsp; testBarGraphPanel()  
-- __Goal:__ To plot and show a bar graph model based on the input value
+- __Goal:__ To test if the constructor of BarGraphPanel is functioned based on input parameters
 - __Testable Function:__
   - BarGraphPanel()
 - __Parameters (Not directly):__
