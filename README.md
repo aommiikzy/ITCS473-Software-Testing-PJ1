@@ -46,7 +46,7 @@
   - Boolean
 - __Return Value:__
   - True, False  
-- __ECC Interface base__  
+- __ECC Interface-based__  
 
 |  | b1 | b2 | b3 | b4 |
 |-|:-:|:-:|:-:|:-:|
@@ -61,7 +61,7 @@ T4: (A4,B4,C4)
 - __Valid values:__  
 (A2,B2,C2), (A3,B3,C3)  
 
-- __ECC Functional base__  
+- __ECC Functionality-based__  
 
 |  | b1 | b2 |
 |-|:-:|:-:|
