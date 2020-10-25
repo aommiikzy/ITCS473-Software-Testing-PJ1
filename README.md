@@ -37,7 +37,7 @@
 -----------------------------------------------------------------------------------------------------
 
 ## Method 2:&nbsp; testSetData()
-- __Goal:__ To set the data in the main array
+- __Goal:__ To observe the correct data assignment in the original array
 - __Testable Function:__
   - setData()
 - __Parameters:__
@@ -85,7 +85,7 @@ T2: (A2,B2,C2)
 -----------------------------------------------------------------------------------------------------
 
 ## Method 3:&nbsp; testAppendDataRow() 
-- __Goal:__ To append array input into the back of an existing data array, shift to the right if the existing data array is full.
+- __Goal:__ To test whether an array data is correctly appended input into the back of an existing data array, column-wise, shift to the right if the existing data array is full
 - __Testable Function:__
   - appendDataRow()
 - __Parameters:__
@@ -94,7 +94,7 @@ T2: (A2,B2,C2)
   - Boolean
 - __Return Value:__
   - True, False  
-- __Interface base:__  
+- __Interface-based:__  
 
 |  | b1 | b2 | b3 |
 |-|:-:|:-:|:-:|
@@ -104,7 +104,7 @@ T2: (A2,B2,C2)
 - __Valid values:__  
 c1b1, c1b2, c1b3  
 
-- __Functional base: PWC__  
+- __Functionality-based: PWC__  
 
 |  | b1 | b2 |
 |-|:-:|:-:|
@@ -115,7 +115,7 @@ c1b1, c1b2, c1b3
 [T1b1, T2b1], [T1b1, T2b2], [T1b2, T2b1], [T1b2, T2b2],  
 [T2b1, T3b1], [T2b1, T3b2], [T2b2, T3b1], [T2b2, T3b2]
 
-__Eliminate redundant tests and infeasible tests:__  
+__Valid values:__  
 [T1b1, T2b1, T3b2], [T1b1, T2b2, T3b2]  
 
 -__Derived test values:__  
@@ -131,7 +131,7 @@ __Eliminate redundant tests and infeasible tests:__
 -----------------------------------------------------------------------------------------------------
 
 ## Method 4:&nbsp; testResetBuffer() 
-- __Goal:__ Reset the main array to its initial state.
+- __Goal:__ To test if the data array is reset to its initial state (default value : -2147483648)
 - __Testable Function:__
   - ResetBuffer()
 - __Parameters (Not directly):__
@@ -142,7 +142,7 @@ __Eliminate redundant tests and infeasible tests:__
   - -  
 - __Exceptional behavior__  
   - -
-- __Interface base:__  
+- __Interface-based:__  
 
 |  | b1 | b2 |
 |-|:-:|:-:|
@@ -155,7 +155,7 @@ __Eliminate redundant tests and infeasible tests:__
 - __Valid values:__  
 [a1, F], [a2, F]  
 
-- __Functional base:__  
+- __Functionality-based:__  
 
 |  | b1 | b2 |
 |-|:-:|:-:|
@@ -180,7 +180,7 @@ __Eliminate redundant tests and infeasible tests:__
 -----------------------------------------------------------------------------------------------------
 
 ## Method 5:&nbsp; testSetDataRow()
-- __Goal:__ To set data in column of the main array.
+- __Goal:__ To observe the correct data assignment in the row of the original array
 - __Testable Function:__
   - setDataRow()  
 - __Parameters:__
@@ -189,7 +189,7 @@ __Eliminate redundant tests and infeasible tests:__
   - Boolean
 - __Return Value:__
   - True    
-- __Interface base BCC:__  
+- __Interface-based BCC:__  
 Base = (A2,B3)  
 
 |  | b1 | b2 | b3 | b4 |
@@ -204,10 +204,10 @@ T4: (A2,B1)
 T5: (A2,B2)   
 T6: (A3,B3)  
 
-__Eliminate redundant tests and infeasible tests__  
-- __Interface base:__  
+__Valid values__  
+- __Interface-based:__  
 (A2,B3),(A3,B3), (A1,B3)  
-- __Functional base:__  
+- __Functionality-based:__  
 (A1), (A2)  
 - __BCC Functional base:__  
 Base choice = (A1)  
@@ -235,7 +235,7 @@ T3: (A2,B1)
 -----------------------------------------------------------------------------------------------------
 
 ## Method 6:&nbsp; testDataBuffer()
-- __Goal:__ To assign value of column and rows in dataBuffer class
+- __Goal:__ To observe the value of the contractor whether input columns and rows are created correctly or not
 - __Testable Function:__
   - DataBuffer()
 - __Parameters:__
@@ -244,7 +244,7 @@ T3: (A2,B1)
   - -
 - __Return Value:__
   - -  
-- __ECC Interface base:__  
+- __ECC Interface-based:__  
 
 |  | b1 | b2 | b3 | b4 |
 |-|:-:|:-:|:-:|:-:|
@@ -256,7 +256,7 @@ T2: (A2,B2)
 T3: (A3,B3)  
 T4: (A4,B4)  
 
-- __ECC Functionalbase:__  
+- __ECC Functionality-base:__  
 
 |  | b1 | b2 |
 |-|:-:|:-:|
@@ -268,10 +268,10 @@ T2: (A2,B2)
 
 - __Valid values:__  
 
-- __Interface base:__  
+- __Interface-based:__  
 (A1,B1), (A2,B2), (A3,B3) ,(A4,B4)  
 
--__Functional base:__  
+-__Functionality-based:__  
  (A1,B1)  
  
  - __Derived test values__  
@@ -287,7 +287,7 @@ T2: (A2,B2)
 -----------------------------------------------------------------------------------------------------
 
 ## Method 7:&nbsp; testGetColumnClone()
-- __Goal:__ To clone the value in the main array
+- __Goal:__ To observe the value of column after it was cloned whether it is identical to the original array
 - __Testable Function:__
   - getColumnClone()
 - __Parameters:__
@@ -297,7 +297,7 @@ T2: (A2,B2)
 - __Return Value:__
   - The value is assigned in the new array.  
   
-- __Interface base ACoC:__  
+- __Interface-based ACoC:__  
 
 |  | b1 | b2 | b3 | b4 |
 |-|:-:|:-:|:-:|:-:|
@@ -308,7 +308,7 @@ T2: (A2)
 T3: (A3)   
 T4: (A4)  
 
-- __Functional base ACoC:__  
+- __Functional-based ACoC:__  
 
 |  | b1 | b2 |
 |-|:-:|:-:|
@@ -321,9 +321,9 @@ T3: (A2,B1)
 T4: (A2,B2)  
 
 __Eliminate redundant tests and infeasible tests__  
-- __Interface base:__  
+- __Interface-based:__  
 (A1), (A2), (A3), (A4)    
-- __Functional base:__  
+- __Functional-based:__  
 (A1,B1)  
 
 - __Derived test values__  
@@ -339,7 +339,7 @@ __Eliminate redundant tests and infeasible tests__
 -----------------------------------------------------------------------------------------------------
 
 ## Method 8:&nbsp; testSetDataColumn()
-- __Goal:__ To set data in column of the main array  
+- __Goal:__ To observe the correct data assignment in the column of the original array  
 - __Testable Function:__
   - setDataColumn())
 - __Parameters:__
@@ -349,7 +349,7 @@ __Eliminate redundant tests and infeasible tests__
 - __Return Value:__
   - True  
   
-- __Interface base BCC:__  
+- __Interface-based BCC:__  
 Base = (A2, B3)  
 
 |  | b1 | b2 | b3 | b4 |
@@ -364,7 +364,7 @@ T4: (A2,B1)
 T5: (A2,B2)   
 T6: (A3,B3)  
 
-- __Functional base BCC:__  
+- __Functional-based BCC:__  
 Base = (A1)  
 
 |  | b1 | b2 |
@@ -375,9 +375,9 @@ T1: (A1)
 T2: (A2)  
 
 __Eliminate redundant tests and infeasible tests__  
-- __Interface base:__  
+- __Interface-based:__  
 (A2,B3),(A3,B3), (A1,B3)    
-- __Functional base:__  
+- __Functionality-based:__  
 (A1), (A2)   
 
 - __Derived test values__  
@@ -404,7 +404,7 @@ __Eliminate redundant tests and infeasible tests__
   - -  
 - __Exceptional behavior__  
   - yMin/yMax can be both negative and positive  
-- __Interface base:__
+- __Interface-based:__
 
 |  | b1 | b2 | b3 | b4 |
 |-|:-:|:-:|:-:|:-:|
@@ -426,7 +426,7 @@ no. of tests = 2 + (2*(2-1)) + (2*(2-1)) + (2*(2-1)) + (2*(2-1)) + (2*(4-2)) + (
 - __Valid values:__  
 [T, T, T, T, c2, T], [F, T, T, T, c2, T], [T, T, F, T, c2, T], [T, T, T, F, c2, T], [T, T, T, T, c2, F], [T, T, T, T, c4, T], [T, T, T, T, c3, T], [T, T, T, T, c1, T], [T, T, T, T, c1, T], [F, T, T, T, c1, T], [T, T, F, T, c1, T], [T, T, T, F, c1, T], [T, T, T, T, c1, F]  
 
-- __Functional base__  
+- __Functionality-based__  
 
 |  | b1 | b2 |
 |-|:-:|:-:|
@@ -470,7 +470,7 @@ no. of test = 2 + (2*(2-1)) + (2*(2-2)) = 4 tests
   - -  
 - __Exceptional behavior__  
   - -  
-- __Interface base:__
+- __Interface-based:__
 
 
 |  | b1 | b2 | b3 | b4 |
@@ -483,7 +483,7 @@ no. of test = 2 + (2*(2-1)) + (2*(2-2)) = 4 tests
 | C6: xminor  value | Null(G1) | Positive(G2) | Zero(G3) | Negative(G4) |
 | C7: Color value | valid(D1) | invalid(D2) | - | - |  
 
-- __Functional base:__  
+- __Functionality-based:__  
 
 |  | b1 | b2 |
 |-|:-:|:-:|
