@@ -256,7 +256,7 @@ T2: (A2,B2)
 T3: (A3,B3)  
 T4: (A4,B4)  
 
-- __ECC Functionality-base:__  
+- __ECC Functionality-based:__  
 
 |  | b1 | b2 |
 |-|:-:|:-:|
